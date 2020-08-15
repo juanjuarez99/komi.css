@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const { parallel } = gulp;
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
+const stripCssComments = require('gulp-strip-css-comments');
 
 sass.compiler = require('sass');
 
@@ -13,6 +14,11 @@ const build = () =>
         includePaths: ['node_modules'],
         outputStyle: 'compressed',
       }).on('error', sass.logError)
+    )
+    .pipe(
+      stripCssComments({
+        preserve: /komi/,
+      })
     )
     .pipe(gulp.dest('./dist'));
 
@@ -30,6 +36,11 @@ const docs_css = () =>
         includePaths: ['node_modules'],
         outputStyle: 'compressed',
       }).on('error', sass.logError)
+    )
+    .pipe(
+      stripCssComments({
+        preserve: /komi/,
+      })
     )
     .pipe(gulp.dest('./docs/dist'));
 
