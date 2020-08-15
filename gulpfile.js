@@ -28,7 +28,27 @@ const docs = () => {
   const sources = gulp.src('./docs/dist/*.css', { read: false });
   return target
     .pipe(pug({ pretty: true }))
-    .pipe(inject(sources, { ignorePath: 'docs', removeTags: true }))
+    .pipe(
+      inject(sources, {
+        ignorePath: 'docs',
+        removeTags: true,
+        addPrefix: 'komi.css',
+      })
+    )
+    .pipe(gulp.dest('./docs/'));
+};
+
+const dev_docs = () => {
+  const target = gulp.src('docs/src/**/!(_)*.pug');
+  const sources = gulp.src('./docs/dist/*.css', { read: false });
+  return target
+    .pipe(pug({ pretty: true }))
+    .pipe(
+      inject(sources, {
+        relative: true,
+        removeTags: true,
+      })
+    )
     .pipe(gulp.dest('./docs/'));
 };
 
@@ -50,10 +70,10 @@ const docs_css = () =>
 
 const watch = () => {
   gulp.watch('./**/*.scss', parallel(build, docs_css));
-  gulp.watch('./**/*.pug', docs);
+  gulp.watch('./**/*.pug', dev_docs);
 };
 
-exports.build = build;
+exports.build = parallel(build, docs);
 exports.watch = watch;
 exports.docs = parallel(docs, docs_css);
 exports.default = build;
