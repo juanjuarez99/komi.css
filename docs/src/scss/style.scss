@@ -1,0 +1,74 @@
+@import '../../../src/variables';
+
+.color {
+  height: 75px;
+  width: 20%;
+  margin: 0;
+  display: inline-block;
+  padding: 0.2em;
+  &--title {
+    font-size: 1em;
+  }
+  &-row {
+    display: flex;
+  }
+}
+
+$colors: (
+  'p1': [ $p-100,
+  $g-500,
+  ],
+  'p2': [ $p-200,
+  $g-500,
+  ],
+  'p3': [ $p-300,
+  $g-500,
+  ],
+  'p4': [ $p-400,
+  $g-100,
+  ],
+  'p5': [ $p-500,
+  $g-100,
+  ],
+  'g1': [ $g-100,
+  $g-500,
+  ],
+  'g2': [ $g-200,
+  $g-500,
+  ],
+  'g3': [ $g-300,
+  black,
+  ],
+  'g4': [ $g-400,
+  $g-100,
+  ],
+  'g5': [ $g-500,
+  $g-100,
+  ],
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    background-color: nth($color, 1);
+    color: nth($color, 2);
+    .color--title::after {
+      content: '#{nth($color, 1)}';
+      font-size: 0.6em;
+      float: right;
+    }
+  }
+}
+
+.subtitle {
+  a {
+    display: none;
+    color: $p-200;
+    margin-left: 0.2em;
+    text-decoration: none;
+  }
+  &:hover {
+    a {
+      display: inline;
+    }
+  }
+}
