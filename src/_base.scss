@@ -16,3 +16,19 @@ body {
   background-color: $g-100;
   color: $g-500;
 }
+
+hr {
+  margin: 0.2em 0;
+  border: none;
+  border-bottom: 1px solid $p-300;
+}
+
+a {
+  color: $p-500;
+  &:hover {
+    color: $p-400;
+  }
+  &:visited {
+    color: $g-400;
+  }
+}
