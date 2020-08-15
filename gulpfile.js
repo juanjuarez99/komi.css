@@ -8,7 +8,12 @@ sass.compiler = require('sass');
 const build = () =>
   gulp
     .src('./src/*.scss')
-    .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: ['node_modules'],
+        outputStyle: 'compressed',
+      }).on('error', sass.logError)
+    )
     .pipe(gulp.dest('./dist'));
 
 const docs = () =>
@@ -20,11 +25,16 @@ const docs = () =>
 const docs_css = () =>
   gulp
     .src(['./src/*.scss', './docs/src/scss/*.scss'])
-    .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: ['node_modules'],
+        outputStyle: 'compressed',
+      }).on('error', sass.logError)
+    )
     .pipe(gulp.dest('./docs/dist'));
 
 const watch = () => {
-  gulp.watch('./**/*.scss', build);
+  gulp.watch('./**/*.scss', parallel(build, docs_css));
   gulp.watch('./**/*.pug', docs);
 };
 
