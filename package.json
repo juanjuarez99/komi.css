@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-inject": "^5.0.5",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-strip-css-comments": "^2.0.0",

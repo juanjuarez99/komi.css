@@ -3,6 +3,7 @@ const { parallel } = gulp;
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 const stripCssComments = require('gulp-strip-css-comments');
+const inject = require('gulp-inject');
 
 sass.compiler = require('sass');
 
@@ -22,11 +23,14 @@ const build = () =>
     )
     .pipe(gulp.dest('./dist'));
 
-const docs = () =>
-  gulp
-    .src('docs/src/**/!(_)*.pug')
+const docs = () => {
+  const target = gulp.src('docs/src/**/!(_)*.pug');
+  const sources = gulp.src('./docs/dist/*.css', { read: false });
+  return target
     .pipe(pug({ pretty: true }))
+    .pipe(inject(sources, { ignorePath: 'docs', removeTags: true }))
     .pipe(gulp.dest('./docs/'));
+};
 
 const docs_css = () =>
   gulp
