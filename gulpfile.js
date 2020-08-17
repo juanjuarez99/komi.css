@@ -45,8 +45,8 @@ const dev_docs = () => {
     .pipe(pug({ pretty: true }))
     .pipe(
       inject(sources, {
-        relative: true,
         removeTags: true,
+        ignorePath: 'docs',
       })
     )
     .pipe(gulp.dest('./docs/'));
