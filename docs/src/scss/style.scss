@@ -61,6 +61,8 @@ $colors: (
 }
 
 .subtitle {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid $p-300;
   a {
     display: none;
     color: $p-200;
@@ -72,4 +74,8 @@ $colors: (
       display: inline;
     }
   }
+}
+
+.spc-btwn {
+  justify-content: space-between;
 }
