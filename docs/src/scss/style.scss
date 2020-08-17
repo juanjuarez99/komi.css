@@ -1,5 +1,9 @@
 @import '../../../src/variables';
 
+.row {
+  display: flex;
+}
+
 .color {
   height: 75px;
   width: 20%;
@@ -8,9 +12,6 @@
   padding: 0.2em;
   &--title {
     font-size: 1em;
-  }
-  &-row {
-    display: flex;
   }
 }
 
