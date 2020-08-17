@@ -5,8 +5,74 @@ h4,
 h5,
 h6 {
   font-family: $header-font;
+  line-height: 1;
 }
 
 p {
   margin: 1em 0;
+}
+
+cite {
+  color: $g-400;
+}
+
+code,
+kbd {
+  font-size: 0.9em;
+  padding: 0.2em;
+  font-family: $monospace-font;
+}
+
+code {
+  background-color: $p-100;
+  color: $p-500;
+}
+
+kbd {
+  background-color: $g-500;
+  color: $g-100;
+  border-radius: 0.2em;
+}
+
+mark {
+  background-color: $p-200;
+  color: $g-500;
+}
+
+small {
+  background-color: $g-200;
+  font-size: 0.7em;
+}
+
+blockquote {
+  background-color: $p-100;
+  border-left: 2px solid $p-300;
+  padding: 1em;
+  p {
+    margin-top: 0;
+    &::before {
+      content: open-quote;
+    }
+    &::after {
+      content: close-quote;
+    }
+  }
+}
+
+pre {
+  padding: 1em;
+  background-color: $p-100;
+  border-radius: 0.3em;
+  overflow-x: auto;
+  code {
+    display: block;
+    line-height: 1;
+  }
+}
+
+a {
+  color: $p-500;
+  &:hover {
+    color: $p-400;
+  }
 }

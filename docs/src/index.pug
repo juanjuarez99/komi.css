@@ -60,19 +60,89 @@ body
         h4 Header 4
         h5 Header 5
         h6 Header 6
+        pre
+          b Example:
+          code
+            | &#60;h1&#x3E;Header 1&#60;/h1&#x3E;
+            | &#60;h2&#x3E;Header 2&#60;/h2&#x3E;
+            | &#60;h3&#x3E;Header 3&#60;/h3&#x3E;
+            | &#60;h4&#x3E;Header 4&#60;/h4&#x3E;
+            | &#60;h5&#x3E;Header 5&#60;/h5&#x3E;
+            | &#60;h6&#x3E;Header 6&#60;/h6&#x3E;
       section
         h3 Paragraphs
         p
           | Yuccie umami single-origin coffee, tote bag woke readymade subway
           | tile.  Pabst four dollar toast gastropub tbh portland. Hammock cray
-          | lumbersexual YOLO meh edison bulb af cardigan actually flannel
-          | activated charcoal.  Hashtag prism salvia, tacos vinyl tbh shabby chic
-          | poke wolf narwhal PBR&B.  Kinfolk typewriter tacos, taiyaki literally
-          | plaid franzen fam 8-bit fingerstache swag tofu ethical.
+          | lumbersexual YOLO meh edison bulb af cardigan actually flannel.
         p
-          | Yuccie umami single-origin coffee, tote bag woke readymade subway
-          | tile.  Pabst four dollar toast gastropub tbh portland. Hammock cray
-          | lumbersexual YOLO meh edison bulb af cardigan actually flannel
-          | activated charcoal.  Hashtag prism salvia, tacos vinyl tbh shabby chic
+          | Activated charcoal.  Hashtag prism salvia, tacos vinyl tbh shabby chic
           | poke wolf narwhal PBR&B.  Kinfolk typewriter tacos, taiyaki literally
           | plaid franzen fam 8-bit fingerstache swag tofu ethical.
+        pre
+          b Example:
+          code
+            | &#60;p&#x3E;Yuccie umami single-origin coffee, tote...&#60;/p&#x3E;
+            | &#60;p&#x3E;Activated charcoal Hashtag prism salvia...&#60;/p&#x3E;
+      section
+        h3 Text elements
+        .row.spc-btwn
+          span
+            a(href="#") Links
+            |
+            |
+            code a
+          span
+            cite Citation
+            |
+            |
+            code cite
+          span
+            code Code tag
+            |
+            |
+            code code
+          span
+            kbd Ctrl + S
+            |
+            |
+            code kbd
+          span
+            mark Highlighted
+            |
+            |
+            code mark
+          span
+            small Small
+            |
+            |
+            code small
+      section
+        h3 Quotes
+        blockquote
+          p Someone said this some time some where, maybe.
+          cite — Some guy
+        pre
+          b Example:
+          code
+            | &#60;blockquote&#x3E;
+            | &#60;p&#x3E;Someone said this some time some where, maybe.&#60;/p&#x3E;
+            | &#60;cite&#x3E;— Some guy&#60;/cite&#x3E;
+            | &#60;/blockquote&#x3E;
+      section
+        h3 Code blocks
+        pre
+          code
+            | const t = () => {
+            |   return 256 * new Date();
+            | }
+        pre
+          b Example:
+          code
+            | &#60;pre&#x3E;
+            |   &#60;code&#x3E;
+            |const t = () => {
+            |  return 256 * new Date();
+            |}
+            |   &#60;/code&#x3E;
+            | &#60;/pre&#x3E;
