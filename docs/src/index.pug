@@ -231,3 +231,93 @@ body
         a(href="#buttons") #
       .row.row--around
         button I'm a button!
+      pre
+        b Example:
+        code
+          | &#60;button&#x3E;I'm a button!&#60;/button&#x3E;
+    article#forms
+      h2.subtitle
+        | Forms
+        a(href="#forms") #
+      form
+        legend Input types
+        label Text input:
+        input(type="text")
+        pre
+          b Example:
+          code
+            | &#60;input type="text"&#x3E;
+        label Button input:
+        input(type="button" value="Button")
+        pre
+          b Example:
+          code
+            | &#60;input type="button" value="Button"&#x3E;
+        label Email input:
+        input(type="email")
+        pre
+          b Example:
+          code
+            | &#60;input type="email"&#x3E;
+        label Submit input:
+        input(type="submit")
+        pre
+          b Example:
+          code
+            | &#60;input type="submit"&#x3E;
+        legend Other tags
+        label Select:
+        select
+          option Volvo
+          option Saab
+          option Fiat
+          option Audi
+        pre
+          b Example:
+          code
+            | &#60;select&#x3E;
+            |   &#60;option&#x3E;Volvo&#60;/option&#x3E;
+            |   &#60;option&#x3E;Saab&#60;/option&#x3E;
+            |   &#60;option&#x3E;Fiat&#60;/option&#x3E;
+            |   &#60;option&#x3E;Audi&#60;/option&#x3E;
+            | &#60;/select&#x3E;
+        label Select multiple:
+        select(size="3" multiple)
+          option Volvo
+          option Saab
+          option Fiat
+          option Audi
+        pre
+          b Example:
+          code
+            | &#60;select size="3" multiple&#x3E;
+            |   &#60;option&#x3E;Volvo&#60;/option&#x3E;
+            |   &#60;option&#x3E;Saab&#60;/option&#x3E;
+            |   &#60;option&#x3E;Fiat&#60;/option&#x3E;
+            |   &#60;option&#x3E;Audi&#60;/option&#x3E;
+            | &#60;/select&#x3E;
+        label Textarea:
+        textarea(rows="10")
+        pre
+          b Example:
+          code
+            | &#60;textarea rows="10"&#x3E;
+            | &#60;/textarea&#x3E;
+        label Button:
+        button Button
+        pre
+          b Example:
+          code
+            | &#60;button&#x3E;Button&#60;/button&#x3E;
+        fieldset
+          legend Fieldset
+          label Name:
+          input
+        pre
+          b Example:
+          code
+            | &#60;fieldset&#x3E;
+            |   &#60;legend&#x3E;Name:&#60;/legend&#x3E;
+            |   &#60;label&#x3E;Name:&#60;/label&#x3E;
+            |   &#60;input&#x3E;
+            | &#60;/fieldset&#x3E;
