@@ -1,0 +1,72 @@
+form {
+  legend {
+    border-bottom: 1px solid $p-200;
+    font-size: 0.8em;
+    color: $p-400;
+    display: block;
+  }
+  * + legend,
+  * + fieldset {
+    margin-top: 0.5em;
+  }
+  label {
+    display: block;
+    margin-top: 0.5em;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    border: 1px solid $p-200;
+    background-color: $g-100;
+    padding: 0.5em;
+    font-size: 1em;
+    &:focus {
+      background-color: $p-100;
+    }
+  }
+  input {
+    &[type='button'],
+    &[type='submit'] {
+      border: none;
+      background: $p-400;
+      color: $g-100;
+      padding: 0.5em;
+      border-radius: 0.2em;
+      cursor: pointer;
+      &:hover {
+        background: $p-500;
+      }
+      &:active {
+        background: $p-300;
+      }
+      &:disabled {
+        &:hover {
+          background: $g-200;
+        }
+        &:active {
+          background: $g-200;
+        }
+      }
+    }
+    &:disabled {
+      background-color: $g-200;
+      color: $g-500;
+      cursor: not-allowed;
+    }
+  }
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  fieldset {
+    border: 1px solid $p-200;
+    border-radius: 0.2em;
+    legend {
+      border: none;
+    }
+  }
+}
