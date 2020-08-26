@@ -4,4 +4,11 @@ button {
   color: $g-100;
   padding: 0.5em;
   border-radius: 0.2em;
+  cursor: pointer;
+  &:hover {
+    background: $p-500;
+  }
+  &:active {
+    background: $p-300;
+  }
 }
