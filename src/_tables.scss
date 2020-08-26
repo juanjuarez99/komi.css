@@ -2,7 +2,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   thead {
-    background-color: $p-300;
+    background-color: $p-400;
     color: $g-100;
     th {
       padding: 0.5em;
@@ -12,7 +12,7 @@ table {
     tr {
       background-color: $g-100;
       &:nth-of-type(odd) {
-        background-color: $g-200;
+        background-color: $p-100;
       }
       td {
         padding: 0.5em;
@@ -23,8 +23,8 @@ table {
     }
   }
   tfoot {
-    background-color: $p-500;
-    color: $g-100;
+    background-color: $p-300;
+    color: $p-500;
     td {
       padding: 0.5em;
       text-align: center;
