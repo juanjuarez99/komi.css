@@ -10,6 +10,7 @@ h6 {
 
 p {
   margin: 1em 0;
+  overflow: hidden;
 }
 
 cite {
@@ -75,4 +76,13 @@ a {
   &:hover {
     color: $p-400;
   }
+}
+
+aside {
+  float: right;
+  display: block;
+  background: $g-200;
+  max-width: 20%;
+  padding: 0.5em;
+  margin: 0 0.5em;
 }
