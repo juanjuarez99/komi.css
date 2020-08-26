@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  thead {
+    background-color: $p-300;
+    color: $g-100;
+    th {
+      padding: 0.5em;
+    }
+  }
+  tbody {
+    tr {
+      background-color: $g-100;
+      &:nth-of-type(odd) {
+        background-color: $g-200;
+      }
+      td {
+        padding: 0.5em;
+        & + td {
+          border-left: 1px solid $g-300;
+        }
+      }
+    }
+  }
+  tfoot {
+    background-color: $p-500;
+    color: $g-100;
+    td {
+      padding: 0.5em;
+      text-align: center;
+    }
+  }
+}
