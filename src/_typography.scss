@@ -79,10 +79,15 @@ a {
 }
 
 aside {
-  float: right;
   display: block;
   background: $g-200;
-  max-width: 20%;
   padding: 0.5em;
   margin: 0 0.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  aside {
+    float: right;
+    max-width: 20%;
+  }
 }
