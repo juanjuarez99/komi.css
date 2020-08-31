@@ -1,0 +1,74 @@
+doctype html5
+head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title Komi.css - Utilities
+  // inject:css
+  // endinject
+body
+  header
+    h1 Komi.css - Utilities
+    nav
+      ul
+        li
+          a(href="#colors") Colors
+  main
+    article#hero
+      h2.subtitle
+        | Hero
+        a(href="#hero") #
+    .hero.g-500
+      img(src="https://source.unsplash.com/random/1366x768/").hero__img.hero__img--overlay
+      h1.c-g-100.fs-10rem This is a hero
+      p.c-g-200.fs-3rem It has to have some more content...
+    article#buttons
+      h2.subtitle
+        | Buttons
+        a(href="#buttons") #
+      .row.spc-btwn
+        div
+          button.btn Primary
+          br
+          code .btn
+        div
+          button.btn.btn--error Error
+          br
+          code .btn--error
+        div
+          button.btn.btn--success Success
+          br
+          code .btn--success
+        div
+          button.btn.btn--warning Warning
+          br
+          code .btn--warning
+      .row.spc-btwn
+        div
+          button.btn.btn--sm Small
+          br
+          code .btn--sm
+        div
+          button.btn Normal
+          br
+          code .btn
+        div
+          button.btn.btn--lg Large
+          br
+          code .btn--lg
+      .row.spc-btwn
+        div
+          button.btn.btn--square Square
+          br
+          code .btn--square
+        div
+          button.btn Normal
+          br
+          code .btn
+        div
+          button.btn.btn--round Round
+          br
+          code .btn--round
+  footer
+    .row.spc-btwn
+      h3 Komi.css
+      a(href="https://github.com/marea/komi.css") Github

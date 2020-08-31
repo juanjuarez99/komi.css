@@ -1,0 +1,118 @@
+/*! komi.util.css v0.3.0 | MIT License | github.com/marea/komi.css */
+
+$prefixes: 'p', 'g', 'e', 'w', 's';
+
+@each $prefix in $prefixes {
+  @for $i from 1 through 5 {
+    .#{$prefix}-#{$i}00 {
+      background-color: var(--#{$prefix}-#{$i}00);
+    }
+    .c-#{$prefix}-#{$i}00 {
+      color: var(--#{$prefix}-#{$i}00);
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .fs-#{$i}rem {
+    font-size: #{$i}rem;
+  }
+
+  .fs-#{$i}em {
+    font-size: #{$i}em;
+  }
+}
+
+.hero {
+  width: 100vw;
+  height: auto;
+  min-height: 200px;
+  margin-left: -5.5%;
+  position: relative;
+  overflow: hidden;
+  padding: 2em;
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+    &--overlay {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    margin-left: -33.33%;
+    padding: 2em 10em;
+  }
+}
+
+.btn {
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  background: var(--p-300);
+  color: var(--g-100);
+  &:hover {
+    background: var(--p-400);
+  }
+  &:active {
+    background: var(--p-200);
+  }
+
+  &--error {
+    background: var(--e-300);
+    color: var(--g-100);
+    &:hover {
+      background: var(--e-400);
+    }
+    &:active {
+      background: var(--e-200);
+    }
+  }
+
+  &--success {
+    background: var(--s-300);
+    color: var(--s-100);
+    &:hover {
+      background: var(--s-400);
+    }
+    &:active {
+      background: var(--s-200);
+    }
+  }
+
+  &--warning {
+    background: var(--w-300);
+    color: var(--w-100);
+    &:hover {
+      background: var(--w-400);
+    }
+    &:active {
+      background: var(--w-200);
+    }
+  }
+
+  &--lg {
+    font-size: 1.25em;
+  }
+
+  &--sm {
+    font-size: 0.75em;
+  }
+
+  &--round {
+    border-radius: 1em;
+  }
+
+  &--square {
+    border-radius: 0;
+  }
+}
