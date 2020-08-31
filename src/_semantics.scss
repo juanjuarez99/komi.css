@@ -2,36 +2,63 @@ header {
   padding: 0.8em;
   color: $p-400;
   background-color: $g-100;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
   font-family: $header-font;
   h1 {
     font-weight: 100;
     font-size: 1.4em;
     margin: 0;
+    top: 0;
   }
   nav {
     ul {
+      text-align: center;
       list-style: none;
       margin: 0;
       display: flex;
-      li {
-        & + li {
-          margin-left: 1em;
-        }
-      }
+      flex-flow: column;
+      padding: 0;
     }
   }
 }
 
 main {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 
 article {
   scroll-margin-top: 4em;
+}
+
+footer {
+  background-color: $p-500;
+  color: $g-100;
+  padding: 1em;
+  a {
+    color: $p-300;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    position: sticky;
+    nav {
+      ul {
+        flex-flow: row;
+        li {
+          & + li {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    width: 60%;
+  }
 }
