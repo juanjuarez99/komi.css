@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Komi.css</title>
   <link rel="stylesheet" href="/komi.css/dist/komi.css">
+  <link rel="stylesheet" href="/komi.css/dist/komi.util.css">
   <link rel="stylesheet" href="/komi.css/dist/style.css">
 </head>
 <body>
@@ -24,88 +25,113 @@
     <article id="colors">
       <h2 class="subtitle">Colors<a href="#colors">#</a></h2>
       <div class="row">
-        <div class="color p1">
-          <div class="color--title">Tint 2</div>
+        <div class="color p-100">
+          <div class="color__title">Tint 2</div>
+          <div class="color__subtitle">.p-100</div>
         </div>
-        <div class="color p2">
-          <div class="color--title">Tint 1</div>
+        <div class="color p-200">
+          <div class="color__title">Tint 1</div>
+          <div class="color__subtitle">.p-200</div>
         </div>
-        <div class="color p3">
-          <div class="color--title">Primary</div>
+        <div class="color p-300">
+          <div class="color__title">Primary</div>
+          <div class="color__subtitle">.p-300</div>
         </div>
-        <div class="color p4">
-          <div class="color--title">Shade 1</div>
+        <div class="color p-400 c-g-100">
+          <div class="color__title">Shade 1</div>
+          <div class="color__subtitle">.p-400</div>
         </div>
-        <div class="color p5">
-          <div class="color--title">Shade 2</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="color g1">
-          <div class="color--title">Tint 2</div>
-        </div>
-        <div class="color g2">
-          <div class="color--title">Tint 1</div>
-        </div>
-        <div class="color g3">
-          <div class="color--title">Mono</div>
-        </div>
-        <div class="color g4">
-          <div class="color--title">Shade 1</div>
-        </div>
-        <div class="color g5">
-          <div class="color--title">Shade 2</div>
+        <div class="color p-500 c-g-100">
+          <div class="color__title">Shade 2</div>
+          <div class="color__subtitle">.p-500</div>
         </div>
       </div>
       <div class="row">
-        <div class="color e1">
-          <div class="color--title">Tint 2</div>
+        <div class="color g-100">
+          <div class="color__title">Tint 2</div>
+          <div class="color__subtitle">.g-100</div>
         </div>
-        <div class="color e2">
-          <div class="color--title">Tint 1</div>
+        <div class="color g-200">
+          <div class="color__title">Tint 1</div>
+          <div class="color__subtitle">.g-200</div>
         </div>
-        <div class="color e3">
-          <div class="color--title">Error</div>
+        <div class="color g-300">
+          <div class="color__title">Mono</div>
+          <div class="color__subtitle">.g-300</div>
         </div>
-        <div class="color e4">
-          <div class="color--title">Shade 1</div>
+        <div class="color g-400 c-g-100">
+          <div class="color__title">Shade 1</div>
+          <div class="color__subtitle">.g-400</div>
         </div>
-        <div class="color e5">
-          <div class="color--title">Shade 2</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="color w1">
-          <div class="color--title">Tint 2</div>
-        </div>
-        <div class="color w2">
-          <div class="color--title">Tint 1</div>
-        </div>
-        <div class="color w3">
-          <div class="color--title">Warning</div>
-        </div>
-        <div class="color w4">
-          <div class="color--title">Shade 1</div>
-        </div>
-        <div class="color w5">
-          <div class="color--title">Shade 2</div>
+        <div class="color g-500 c-g-100">
+          <div class="color__title">Shade 2</div>
+          <div class="color__subtitle">.g-500</div>
         </div>
       </div>
       <div class="row">
-        <div class="color s1">
-          <div class="color--title">Tint 2</div>
+        <div class="color e-100">
+          <div class="color__title">Tint 2</div>
+          <div class="color__subtitle">.e-100</div>
         </div>
-        <div class="color s2">
-          <div class="color--title">Tint 1</div>
+        <div class="color e-200">
+          <div class="color__title">Tint 1</div>
+          <div class="color__subtitle">.e-200</div>
         </div>
-        <div class="color s3">
-          <div class="color--title">Success</div>
+        <div class="color e-300">
+          <div class="color__title">Error</div>
+          <div class="color__subtitle">.e-300</div>
         </div>
-        <div class="color s4">
-          <div class="color--title">Shade 1</div>
+        <div class="color e-400 c-g-100">
+          <div class="color__title">Shade 1</div>
+          <div class="color__subtitle">.e-400</div>
         </div>
-        <div class="color s5">
-          <div class="color--title">Shade 2</div>
+        <div class="color e-500 c-g-100">
+          <div class="color__title">Shade 2</div>
+          <div class="color__subtitle">.e-500</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="color w-100">
+          <div class="color__title">Tint 2</div>
+          <div class="color__subtitle">.w-100</div>
+        </div>
+        <div class="color w-200">
+          <div class="color__title">Tint 1</div>
+          <div class="color__subtitle">.w-200</div>
+        </div>
+        <div class="color w-300">
+          <div class="color__title">Warning</div>
+          <div class="color__subtitle">.w-300</div>
+        </div>
+        <div class="color w-400 c-g-100">
+          <div class="color__title">Shade 1</div>
+          <div class="color__subtitle">.w-400</div>
+        </div>
+        <div class="color w-500 c-g-100">
+          <div class="color__title">Shade 2</div>
+          <div class="color__subtitle">.w-500</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="color s-100">
+          <div class="color__title">Tint 2</div>
+          <div class="color__subtitle">.s-100</div>
+        </div>
+        <div class="color s-200">
+          <div class="color__title">Tint 1</div>
+          <div class="color__subtitle">.s-200</div>
+        </div>
+        <div class="color s-300">
+          <div class="color__title">Success</div>
+          <div class="color__subtitle">.s-300</div>
+        </div>
+        <div class="color s-400 c-g-100">
+          <div class="color__title">Shade 1</div>
+          <div class="color__subtitle">.s-400</div>
+        </div>
+        <div class="color s-500 c-g-100">
+          <div class="color__title">Shade 2</div>
+          <div class="color__subtitle">.s-500</div>
         </div>
       </div>
     </article>
