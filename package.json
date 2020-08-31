@@ -1,6 +1,6 @@
 {
   "name": "komi",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A class-less css framework made with love!",
   "main": "dist/komi.css",
   "keywords": ["css", "css-framework", "classless-css"],
