@@ -1,8 +1,8 @@
 form {
   legend {
-    border-bottom: 1px solid $p-200;
+    border-bottom: 1px solid var(--p-200);
     font-size: 0.8em;
-    color: $p-400;
+    color: var(--p-400);
     display: block;
   }
   * + legend,
@@ -17,41 +17,41 @@ form {
   select,
   textarea {
     width: 100%;
-    border: 1px solid $p-200;
-    background-color: $g-100;
+    border: 1px solid var(--p-200);
+    background-color: var(--g-100);
     padding: 0.5em;
     font-size: 1em;
     &:focus {
-      background-color: $p-100;
+      background-color: var(--p-100);
     }
   }
   input {
     &[type='button'],
     &[type='submit'] {
       border: none;
-      background: $p-400;
-      color: $g-100;
+      background: var(--p-400);
+      color: var(--g-100);
       padding: 0.5em;
       border-radius: 0.2em;
       cursor: pointer;
       &:hover {
-        background: $p-500;
+        background: var(--p-500);
       }
       &:active {
-        background: $p-300;
+        background: var(--p-300);
       }
       &:disabled {
         &:hover {
-          background: $g-200;
+          background: var(--g-200);
         }
         &:active {
-          background: $g-200;
+          background: var(--g-200);
         }
       }
     }
     &:disabled {
-      background-color: $g-200;
-      color: $g-500;
+      background-color: var(--g-200);
+      color: var(--g-500);
       cursor: not-allowed;
     }
   }
@@ -63,7 +63,7 @@ form {
     width: 100%;
   }
   fieldset {
-    border: 1px solid $p-200;
+    border: 1px solid var(--p-200);
     border-radius: 0.2em;
     legend {
       border: none;

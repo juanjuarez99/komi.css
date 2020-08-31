@@ -2,29 +2,29 @@ table {
   width: 100%;
   border-collapse: collapse;
   thead {
-    background-color: $p-400;
-    color: $g-100;
+    background-color: var(--p-400);
+    color: var(--g-100);
     th {
       padding: 0.5em;
     }
   }
   tbody {
     tr {
-      background-color: $g-100;
+      background-color: var(--g-100);
       &:nth-of-type(odd) {
-        background-color: $p-100;
+        background-color: var(--p-100);
       }
       td {
         padding: 0.5em;
         & + td {
-          border-left: 1px solid $g-300;
+          border-left: 1px solid var(--g-300);
         }
       }
     }
   }
   tfoot {
-    background-color: $p-300;
-    color: $p-500;
+    background-color: var(--p-300);
+    color: var(--p-500);
     td {
       padding: 0.5em;
       text-align: center;

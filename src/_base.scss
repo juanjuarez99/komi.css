@@ -6,20 +6,21 @@
 
 html {
   box-sizing: border-box;
-  font-family: $html-font;
-  font-size: $html-font-size;
+  font-family: var(--html-font);
+  font-size: var(--html-font-size);
   scroll-behavior: smooth;
-  line-height: $html-line-height;
+  line-height: var(--html-line-height);
 }
 
 body {
-  font-size: $font-size;
-  background-color: $g-100;
-  color: $g-500;
+  font-size: var(--font-size);
+  background-color: var(--g-100);
+  color: var(--g-500);
+  overflow-x: hidden;
 }
 
 hr {
   margin: 0.2em 0;
   border: none;
-  border-bottom: 1px solid $p-300;
+  border-bottom: 1px solid var(--p-300);
 }

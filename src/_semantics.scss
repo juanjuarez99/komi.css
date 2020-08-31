@@ -1,11 +1,11 @@
 header {
   padding: 0.8em;
-  color: $p-400;
-  background-color: $g-100;
+  color: var(--p-400);
+  background-color: var(--g-100);
   justify-content: space-between;
   align-items: center;
   top: 0;
-  font-family: $header-font;
+  font-family: var(--header-font);
   h1 {
     font-weight: 100;
     font-size: 1.4em;
@@ -34,11 +34,11 @@ article {
 }
 
 footer {
-  background-color: $p-500;
-  color: $g-100;
+  background-color: var(--p-500);
+  color: var(--g-100);
   padding: 1em;
   a {
-    color: $p-300;
+    color: var(--p-300);
   }
 }
 

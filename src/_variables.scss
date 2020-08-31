@@ -1,39 +1,40 @@
-// Colors
-$p-100: #fbd7dd;
-$p-200: #f6b1bc;
-$p-300: #f08999;
-$p-400: #cc5669;
-$p-500: #a92f43;
-
-$g-100: #fef5ec; // Used for page background
-$g-200: #dfd2d1;
-$g-300: #957479;
-$g-400: #5e4b4e;
-$g-500: #262223; // User for text
-
-$e-100: #ffebed;
-$e-200: #ff5c72;
-$e-300: #cc001b;
-$e-400: #70000f;
-$e-500: #140003;
-
-$w-100: #fff6eb;
-$w-200: #ffcf91;
-$w-300: #ffa737;
-$w-400: #8a5a1c;
-$w-500: #140c00;
-
-$s-100: #ebfff0;
-$s-200: #90ffad;
-$s-300: #35ff69;
-$s-400: #1b8a37;
-$s-500: #001405;
-
-// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quicksand:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
-$html-font: Roboto, sans-serif !default;
-$html-font-size: 62.5% !default;
-$html-line-height: 1.5 !default;
-$font-size: 1.8rem;
-$header-font: Quicksand, sans-serif;
-$monospace-font: Anonymous Pro, monospace;
+
+:root {
+  --p-100: #fbd7dd;
+  --p-200: #f6b1bc;
+  --p-300: #f08999;
+  --p-400: #cc5669;
+  --p-500: #a92f43;
+
+  --g-100: #fef5ec; // Used for page background
+  --g-200: #dfd2d1;
+  --g-300: #957479;
+  --g-400: #5e4b4e;
+  --g-500: #262223; // User for text
+
+  --e-100: #ffebed;
+  --e-200: #ff5c72;
+  --e-300: #cc001b;
+  --e-400: #70000f;
+  --e-500: #140003;
+
+  --w-100: #fff6eb;
+  --w-200: #ffcf91;
+  --w-300: #ffa737;
+  --w-400: #8a5a1c;
+  --w-500: #140c00;
+
+  --s-100: #ebfff0;
+  --s-200: #90ffad;
+  --s-300: #35ff69;
+  --s-400: #1b8a37;
+  --s-500: #001405;
+
+  --html-font: Roboto, sans-serif;
+  --html-font-size: 62.5%;
+  --html-line-height: 1.5;
+  --font-size: 1.8rem;
+  --header-font: Quicksand, sans-serif;
+  --monospace-font: Anonymous Pro, monospace;
+}

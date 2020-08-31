@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font;
+  font-family: var(--header-font);
   line-height: 1;
 }
 
@@ -14,40 +14,40 @@ p {
 }
 
 cite {
-  color: $g-400;
+  color: var(--g-400);
 }
 
 code,
 kbd {
   font-size: 0.9em;
   padding: 0.2em;
-  font-family: $monospace-font;
+  font-family: var(--monospace-font);
 }
 
 code {
-  background-color: $p-100;
-  color: $p-500;
+  background-color: var(--p-100);
+  color: var(--p-500);
 }
 
 kbd {
-  background-color: $g-500;
-  color: $g-100;
+  background-color: var(--g-500);
+  color: var(--g-100);
   border-radius: 0.2em;
 }
 
 mark {
-  background-color: $p-200;
-  color: $g-500;
+  background-color: var(--p-200);
+  color: var(--g-500);
 }
 
 small {
-  background-color: $g-200;
+  background-color: var(--g-200);
   font-size: 0.7em;
 }
 
 blockquote {
-  background-color: $p-100;
-  border-left: 2px solid $p-300;
+  background-color: var(--p-100);
+  border-left: 2px solid var(--p-300);
   padding: 1em;
   p {
     margin-top: 0;
@@ -62,7 +62,7 @@ blockquote {
 
 pre {
   padding: 1em;
-  background-color: $p-100;
+  background-color: var(--p-100);
   border-radius: 0.3em;
   overflow-x: auto;
   code {
@@ -72,15 +72,15 @@ pre {
 }
 
 a {
-  color: $p-500;
+  color: var(--p-500);
   &:hover {
-    color: $p-400;
+    color: var(--p-400);
   }
 }
 
 aside {
   display: block;
-  background: $g-200;
+  background: var(--g-200);
   padding: 0.5em;
   margin: 0 0.5em;
 }
