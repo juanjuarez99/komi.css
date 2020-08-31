@@ -2,6 +2,7 @@
 
 .row {
   display: flex;
+  flex-flow: column;
   &--center {
     justify-content: center;
   }
@@ -12,10 +13,11 @@
 
 .color {
   height: 75px;
-  width: 20%;
+  width: 100%;
   margin: 0;
   display: inline-block;
   padding: 0.2em;
+  flex-grow: 1;
   &--title {
     font-size: 1em;
   }
@@ -114,4 +116,16 @@ $colors: (
 
 .spc-btwn {
   justify-content: space-between;
+}
+
+footer {
+  h3 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .row {
+    flex-flow: row;
+  }
 }
